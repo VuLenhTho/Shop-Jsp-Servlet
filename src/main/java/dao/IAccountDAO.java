@@ -1,6 +1,7 @@
 package dao;
 
 import model.AccountModel;
+import paging.PageAble;
 
 import java.util.List;
 
@@ -11,9 +12,11 @@ public interface IAccountDAO extends IGenericDAO<AccountModel>{
 
     void deleteAccount(Long id);
 
-    List<AccountModel> findAllAccount();
+    List<AccountModel> findAllAccount(PageAble pageAble);
 
     AccountModel findByUserNameAndPassword(String userName, String password);
 
     AccountModel findByID(Long id);
+
+    long countAllAccount();
 }

@@ -4,6 +4,7 @@ import dao.IAccountDAO;
 import dao.impl.AccountDAOImpl;
 import model.AccountModel;
 import model.request.AccountRequest;
+import paging.PageAble;
 import service.IAccountService;
 
 import java.sql.Timestamp;
@@ -35,8 +36,8 @@ public class AccountServiceImpl implements IAccountService {
     }
 
     @Override
-    public List<AccountModel> findAllAccount() {
-        return accountDAO.findAllAccount();
+    public List<AccountModel> findAllAccount(PageAble pageAble) {
+        return accountDAO.findAllAccount(pageAble);
     }
 
     @Override
@@ -47,5 +48,10 @@ public class AccountServiceImpl implements IAccountService {
     @Override
     public AccountModel findByID(Long id) {
         return accountDAO.findByID(id);
+    }
+
+    @Override
+    public long countAllAccount() {
+        return accountDAO.countAllAccount();
     }
 }

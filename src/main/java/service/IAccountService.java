@@ -2,6 +2,7 @@ package service;
 
 import model.AccountModel;
 import model.request.AccountRequest;
+import paging.PageAble;
 
 import java.util.List;
 
@@ -12,9 +13,11 @@ public interface IAccountService {
 
     void deleteAccount(Long id);
 
-    List<AccountModel> findAllAccount();
+    List<AccountModel> findAllAccount(PageAble pageAble);
 
     AccountModel findByUserNameAndPassword(AccountRequest accountRequest);
 
     AccountModel findByID(Long id);
+
+    long countAllAccount();
 }

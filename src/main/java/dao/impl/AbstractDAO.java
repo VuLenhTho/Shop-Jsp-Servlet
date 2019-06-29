@@ -1,5 +1,6 @@
 package dao.impl;
 
+import constant.Constant;
 import dao.IGenericDAO;
 import mapper.RowMapper;
 
@@ -100,6 +101,40 @@ public class AbstractDAO<T> implements IGenericDAO<T> {
             }
         }
         return results;
+    }
+
+    @Override
+    public long countAll(String sql, Object... parameters) {
+        Connection connection = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try{
+            int count = 0;
+            connection = getConnection();
+            ps = connection.prepareStatement(sql);
+            setParameters(ps,parameters);
+            rs = ps.executeQuery();
+            while (rs.next()){
+                count = rs.getInt(1);
+            }
+            return count;
+        } catch (SQLException e) {
+            return 0;
+        }finally {
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+                if (ps != null) {
+                    ps.close();
+                }
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (SQLException e) {
+                return 0;
+            }
+        }
     }
 
     private void setParameters(PreparedStatement ps, Object... parameters) throws SQLException {

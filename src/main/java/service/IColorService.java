@@ -14,4 +14,6 @@ public interface IColorService {
     ColorModel findByID(Integer id);
 
     List<ColorModel> findAllColor();
+
+    String findByProductID(Long id);
 }

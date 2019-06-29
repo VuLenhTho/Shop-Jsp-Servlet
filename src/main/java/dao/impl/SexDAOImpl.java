@@ -34,7 +34,7 @@ public class SexDAOImpl extends AbstractDAO<SexModel> implements ISexDAO {
 
     @Override
     public List<SexModel> findAllSex() {
-        String sql = "SELECT * FROM sex WHERE id =?";
+        String sql = "SELECT * FROM sex ";
         List<SexModel> sexModels = findByProperties(sql,new SexMapper());
         return sexModels.isEmpty()?null:sexModels;
     }

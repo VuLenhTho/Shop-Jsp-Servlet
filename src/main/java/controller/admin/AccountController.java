@@ -3,10 +3,13 @@ package controller.admin;
 import constant.Constant;
 import model.AccountModel;
 import model.RoleModel;
+import model.response.ModelResponse;
+import paging.PageRequest;
 import service.IAccountService;
 import service.IRoleService;
 import service.impl.AccountServiceImpl;
 import service.impl.RoleServiceImpl;
+import utils.MapClientToServerUtil;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -21,6 +24,7 @@ import java.util.List;
 public class AccountController extends HttpServlet {
     private IAccountService accountService;
     private IRoleService roleService;
+    private String previousPage = "1";
 
     public AccountController() {
         accountService= new AccountServiceImpl();
@@ -29,13 +33,14 @@ public class AccountController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<AccountModel> accountModelList = accountService.findAllAccount();
-        req.setAttribute("accountModelList",accountModelList);
-        List<RoleModel> roleModelList = roleService.findAllRole();
-        req.setAttribute("roleModelList",roleModelList);
+        String currentPage = req.getParameter("page");
+        if (previousPage != null){
+            this.previousPage = currentPage;
+        }
         String type = req.getParameter(Constant.TYPE);
         String view = Constant.EMPTY;
         if (type != null){
+            req.setAttribute("previousPage",this.previousPage);
             if (type.equals(Constant.ACTION_EDIT)){
                 String id = req.getParameter("id");
                 if (!id.equals(Constant.EMPTY)){
@@ -54,8 +59,18 @@ public class AccountController extends HttpServlet {
         }else {
             view = "/views/admin/account/account_list.jsp";
         }
-
-
+        PageRequest pageRequest = MapClientToServerUtil.toModel(PageRequest.class,req);
+        List<AccountModel> accountModelList = accountService.findAllAccount(pageRequest);
+        List<RoleModel> roleModelList = roleService.findAllRole();
+        req.setAttribute("roleModelList",roleModelList);
+        long totalItem = accountService.countAllAccount();
+        long totalPage = (long) Math.ceil((double) totalItem/pageRequest.getLimit());
+        ModelResponse<AccountModel> result = new ModelResponse<>();
+        result.setPage(pageRequest.getPage());
+        result.setData(accountModelList);
+        result.setTotalPage(totalPage);
+        result.setTotalItem(totalItem);
+        req.setAttribute("models",result);
         RequestDispatcher requestDispatcher = req.getRequestDispatcher(view);
         requestDispatcher.forward(req,resp);
     }

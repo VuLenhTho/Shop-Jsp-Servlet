@@ -21,7 +21,7 @@ public class ColorServiceImpl implements IColorService {
 
     @Override
     public void updateColor(ColorModel colorModel) {
-        colorDAO.updateColor(colorModel.getId(),colorModel);
+        colorDAO.updateColor(colorModel.getId(), colorModel);
     }
 
     @Override
@@ -37,5 +37,17 @@ public class ColorServiceImpl implements IColorService {
     @Override
     public List<ColorModel> findAllColor() {
         return colorDAO.findAllColor();
+    }
+
+    @Override
+    public String findByProductID(Long id) {
+        String result = "";
+        List<ColorModel> colorModels = colorDAO.findByProductID(id);
+        if (colorModels != null) {
+            for (ColorModel color : colorModels) {
+                result += color.getColorName() + " ";
+            }
+        }
+        return result;
     }
 }

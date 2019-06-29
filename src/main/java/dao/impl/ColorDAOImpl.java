@@ -38,4 +38,13 @@ public class ColorDAOImpl extends AbstractDAO<ColorModel> implements IColorDAO {
         List<ColorModel> colorModels = findByProperties(sql,new ColorMapper());
         return colorModels.isEmpty()? null : colorModels;
     }
+
+    @Override
+    public List<ColorModel> findByProductID(Long id) {
+        String sql = "SELECT id,colorName FROM product_color,color WHERE productID = ? AND colorID = color.id";
+        List<ColorModel> colorModels = findByProperties(sql,new ColorMapper(),id);
+        return colorModels.isEmpty()? null : colorModels;
+    }
+
+
 }

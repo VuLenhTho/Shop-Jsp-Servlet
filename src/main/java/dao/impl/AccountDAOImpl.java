@@ -3,6 +3,7 @@ package dao.impl;
 import dao.IAccountDAO;
 import mapper.AccountMapper;
 import model.AccountModel;
+import paging.PageAble;
 
 import java.util.List;
 
@@ -37,10 +38,12 @@ public class AccountDAOImpl extends AbstractDAO<AccountModel> implements IAccoun
     }
 
     @Override
-    public List<AccountModel> findAllAccount() {
+    public List<AccountModel> findAllAccount(PageAble pageAble) {
         String sql = "SELECT * FROM account";
-        List<AccountModel> accountModels = findByProperties(sql, new AccountMapper());
-        return accountModels.isEmpty() ? null : accountModels;
+        if (pageAble.getPage() != 0 && pageAble.getLimit() != 0){
+            sql += " LIMIT "+ pageAble.getLimit() + " OFFSET " + pageAble.getObset();
+        }
+        return findByProperties(sql, new AccountMapper());
     }
 
     @Override
@@ -55,6 +58,12 @@ public class AccountDAOImpl extends AbstractDAO<AccountModel> implements IAccoun
         String sql = "SELECT * FROM account WHERE id = ?";
         List<AccountModel> accountModel = findByProperties(sql, new AccountMapper(), id);
         return accountModel.isEmpty() ? null : accountModel.get(0);
+    }
+
+    @Override
+    public long countAllAccount() {
+        String sql = "SELECT COUNT(*) FROM account";
+        return countAll(sql);
     }
 
 }

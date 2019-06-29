@@ -162,7 +162,7 @@
             data: JSON.stringify(data),
             dataType: 'html',
             success: function () {
-                window.location.href = 'http://localhost:8080/admin/account';
+                window.location.href = 'http://localhost:8080/admin/account?page=${previousPage}&size=2';
             },
             error: function () {
 
@@ -178,7 +178,7 @@
             data: JSON.stringify(data),
             dataType: 'html',
             success: function () {
-                window.location.href = 'http://localhost:8080/admin/account';
+                window.location.href = 'http://localhost:8080/admin/account?page=${previousPage}&size=2';
 
             }
         });

@@ -8,4 +8,6 @@ public interface IGenericDAO<T> {
     void insertUpdateDelete(String sql, Object...parameters);
 
     List<T> findByProperties(String sql, RowMapper<T> mapper, Object... parameters);
+
+    long countAll(String sql, Object...parameters);
 }

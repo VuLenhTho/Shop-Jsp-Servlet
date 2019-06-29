@@ -19,14 +19,12 @@ public class ProductModel {
     private Long discountID;
     private Integer trends;
     private Integer hotSelling;
-    private Integer colorID;
-    private Integer sizeID;
     private String thumbnailList;
 
     public ProductModel() {
     }
 
-    public ProductModel(long id, String productName, long importPrice, long price, long amount, String createdBy, Timestamp createdDate, String modifiedBy, Timestamp modifiedDate, String thumbnail, int sexID, String status, int subcategoryID, long discountID, int trends, int hotSelling, int colorID, int sizeID, String thumbnailList) {
+    public ProductModel(long id, String productName, long importPrice, long price, long amount, String createdBy, Timestamp createdDate, String modifiedBy, Timestamp modifiedDate, String thumbnail, int sexID, String status, int subcategoryID, long discountID, int trends, int hotSelling, String thumbnailList) {
         this.id = id;
         this.productName = productName;
         this.importPrice = importPrice;
@@ -43,8 +41,6 @@ public class ProductModel {
         this.discountID = discountID;
         this.trends = trends;
         this.hotSelling = hotSelling;
-        this.colorID = colorID;
-        this.sizeID = sizeID;
         this.thumbnailList = thumbnailList;
     }
 
@@ -174,22 +170,6 @@ public class ProductModel {
 
     public void setHotSelling(Integer hotSelling) {
         this.hotSelling = hotSelling;
-    }
-
-    public Integer getColorID() {
-        return colorID;
-    }
-
-    public void setColorID(Integer colorID) {
-        this.colorID = colorID;
-    }
-
-    public Integer getSizeID() {
-        return sizeID;
-    }
-
-    public void setSizeID(Integer sizeID) {
-        this.sizeID = sizeID;
     }
 
     public String getThumbnailList() {

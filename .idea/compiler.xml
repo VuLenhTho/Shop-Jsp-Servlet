@@ -9,5 +9,8 @@
         <module name="store-jsp-byme" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="store-jsp-byme" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

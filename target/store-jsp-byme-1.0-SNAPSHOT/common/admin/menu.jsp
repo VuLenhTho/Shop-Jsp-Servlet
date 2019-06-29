@@ -47,28 +47,28 @@
             <b class="arrow"></b>
             <ul class="submenu">
                 <li>
-                    <a href="/admin/news?page=1&size=4">
+                    <a href="/admin/product?page=1&size=2">
                         <i class="menu-icon fa fa-caret-right"></i>
-                        Danh sách bài viết
+                        Danh sách sản phẩm
                     </a>
                     <b class="arrow"></b>
                 </li>
                 <li>
-                    <a href="/admin/category">
+                    <a href="/admin/category?page=1&size=2">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Danh sách thể loại
                     </a>
                     <b class="arrow"></b>
                 </li>
                 <li>
-                    <a href="/admin/account">
+                    <a href="/admin/account?page=1&size=2">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Danh sách tài khoản
                     </a>
                     <b class="arrow"></b>
                 </li>
                 <li>
-                    <a href="/admin/role">
+                    <a href="/admin/role?page=1&size=2">
                         <i class="menu-icon fa fa-caret-right"></i>
                         Quản lý quyền
                     </a>

@@ -14,4 +14,6 @@ public interface IColorDAO extends IGenericDAO<ColorModel> {
     ColorModel findByID(Integer id);
 
     List<ColorModel> findAllColor();
+
+    List<ColorModel> findByProductID(Long id);
 }
