@@ -6,9 +6,19 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="310ad2a4-536b-4d94-83ff-b433b1928624" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="310ad2a4-536b-4d94-83ff-b433b1928624" name="Default" comment="clean product controller">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mapper/ProductColorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/IProductColorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/impl/ProductColorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/TestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store-jsp-byme.iml" beforeDir="false" afterPath="$PROJECT_DIR$/store-jsp-byme.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,6 +28,15 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/store_jsp_byme$Test.ic" NAME="Test Coverage Results" MODIFIED="1563175849881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>test.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myFlattenPackages" value="true" />
+    <option name="myAutoScrollFromSource" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -46,16 +65,33 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="storemvc: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="storemvc@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="storemvc: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="color: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="storemvc@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="storemvc: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="product_color: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/ProductController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="2145">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,16 +100,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/AccountController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="429">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/ProductController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2024">
-              <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,38 +108,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IProductService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/IProductService.java">
+      <file leaf-file-name="edit_product.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/product/edit_product.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="6534">
+              <caret line="198" column="17" selection-start-line="198" selection-start-column="17" selection-end-line="198" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/ProductServiceImpl.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1602#1603#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="371">
+              <caret line="37" column="21" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp">
+      <file leaf-file-name="SexServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/SexServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="264">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/web/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/AccountDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account" pinned="false" current-in-tab="false">
+        <entry file="das://c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2/schema/storemvc/table/account">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -120,7 +192,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/mapper/ProductColorMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/ProductColorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/impl/ProductColorService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/IProductColorDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/impl/ProductColorDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/impl/ProductColorServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/IProductColorService.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/admin/ProductController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/admin/product/edit_product.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/TestClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/Test.java" />
       </list>
     </option>
   </component>
@@ -137,6 +221,13 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="MavenProjectNavigator">
     <treeState>
       <expand>
@@ -152,17 +243,19 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="670" />
+    <option name="y" value="125" />
+    <option name="width" value="820" />
+    <option name="height" value="513" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,18 +305,50 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="store-jsp-byme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="store-jsp-byme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="store-jsp-byme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="store-jsp-byme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="store-jsp-byme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="store-jsp-byme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="store-jsp-byme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="store-jsp-byme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../News-Java-03" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -241,9 +366,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="store-jsp-byme" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -354,6 +502,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Unnamed" />
+      <item itemvalue="JUnit.Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -366,7 +523,13 @@
       <option name="presentableId" value="Default" />
       <updated>1561779257266</updated>
       <workItem from="1561779260545" duration="807000" />
-      <workItem from="1561793179477" duration="3286000" />
+      <workItem from="1561793179477" duration="7417000" />
+      <workItem from="1562034753319" duration="7558000" />
+      <workItem from="1563172688447" duration="2451000" />
+      <workItem from="1563622649816" duration="74000" />
+      <workItem from="1563622863252" duration="761000" />
+      <workItem from="1563683911650" duration="146000" />
+      <workItem from="1565933410540" duration="255000" />
     </task>
     <task id="LOCAL-00001" summary="intel moi">
       <created>1561779572568</created>
@@ -375,14 +538,39 @@
       <option name="project" value="LOCAL" />
       <updated>1561779572568</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="clean product controller">
+      <created>1561802179444</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561802179444</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Test - 2019.07.15 at 14h 28m 08s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test - 2019.07.15 at 14h 28m 27s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test - 2019.07.15 at 14h 30m 24s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test - 2019.07.15 at 14h 30m 38s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test - 2019.07.15 at 14h 30m 50s.xml">
+      <configuration name="Test" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4093000" />
+    <option name="totallyTimeSpent" value="19469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -391,21 +579,22 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.16577825" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.12473348" />
       <window_info id="Structure" order="1" sideWeight="0.5005587" side_tool="true" weight="0.13539445" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36648044" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32943678" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.3298969" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32402235" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32849163" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49944136" visible="true" weight="0.13539445" />
+      <window_info anchor="bottom" id="Database Console" order="8" visible="true" weight="0.32960895" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49944136" visible="true" weight="0.18176973" />
       <window_info id="Web" order="2" sideWeight="0.5005587" side_tool="true" weight="0.13539445" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -413,6 +602,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
@@ -425,9 +615,88 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="intel moi" />
-    <option name="LAST_COMMIT_MESSAGE" value="intel moi" />
+    <MESSAGE value="clean product controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean product controller" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2937">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/IProductColorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/ProductColorDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/IProductColorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/ProductColorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/ProductColorMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/product/edit_product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7623">
+          <caret line="231" column="35" lean-forward="true" selection-start-line="231" selection-start-column="35" selection-end-line="231" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -442,6 +711,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constant/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/IProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -451,8 +741,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="429">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -480,19 +770,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/ProductServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="363">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/IProductService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -501,10 +794,275 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/constant/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.SCHEMA:storemvc">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.SCHEMA:storemvc</OriginalElement>
+          <nodes>
+            <node x="124.125" y="201.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.role</node>
+            <node x="320.125" y="201.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.sex</node>
+            <node x="516.625" y="0.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.category</node>
+            <node x="733.125" y="567.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.color</node>
+            <node x="507.125" y="190.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.subcategory</node>
+            <node x="522.1894850818095" y="402.9355149181906">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product</node>
+            <node x="189.0" y="479.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.account</node>
+            <node x="749.125" y="124.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.discount</node>
+            <node x="662.875" y="856.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product_color</node>
+            <node x="247.5454545454545" y="856.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product_size</node>
+            <node x="0.0" y="567.0">c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.size</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product_color" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.color">
+              <point x="41.0" y="-48.0" />
+              <point x="785.875" y="831.0" />
+              <point x="824.125" y="831.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.subcategory">
+              <point x="0.0" y="-202.0" />
+              <point x="0.0" y="48.0" />
+            </edge>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.discount">
+              <point x="63.333333333333314" y="-202.0" />
+              <point x="681.4583333333333" y="377.0" />
+              <point x="849.625" y="377.0" />
+              <point x="0.0" y="114.0" />
+            </edge>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.sex">
+              <point x="-63.33333333333337" y="-202.0" />
+              <point x="554.7916666666666" y="377.0" />
+              <point x="445.375" y="377.0" />
+              <point x="41.75" y="37.0" />
+            </edge>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.account" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.sex">
+              <point x="49.0" y="-125.0" />
+              <point x="336.0" y="377.0" />
+              <point x="361.875" y="377.0" />
+              <point x="-41.75" y="37.0" />
+            </edge>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.account" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.role">
+              <point x="-49.0" y="-125.0" />
+              <point x="238.0" y="377.0" />
+              <point x="212.125" y="377.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.subcategory" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.category">
+              <point x="0.0" y="-48.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product_size" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product">
+              <point x="41.0" y="-48.0" />
+              <point x="370.5454545454545" y="831.0" />
+              <point x="570.625" y="831.0" />
+              <point x="-47.5" y="202.0" />
+            </edge>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product_size" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.size">
+              <point x="-41.0" y="-48.0" />
+              <point x="288.5454545454545" y="831.0" />
+              <point x="84.5" y="831.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product_color" target="c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2.TABLE:storemvc.product">
+              <point x="-41.0" y="-48.0" />
+              <point x="703.875" y="831.0" />
+              <point x="665.625" y="831.0" />
+              <point x="47.5" y="202.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0689300411522633" x="119.0" y="712.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/IProductDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/ProductDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="65" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/DiscountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mapper/ProductColorMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/ProductColorModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/IProductColorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/ProductColorDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1089">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/IProductColorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/ProductColorServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/product/product_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-891" />
+      </provider>
+    </entry>
+    <entry file="das://c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2/schema/storemvc/table/product">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2/schema/storemvc/table/product_color">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/admin/product/edit_product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6534">
+          <caret line="198" column="17" selection-start-line="198" selection-start-column="17" selection-end-line="198" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/impl/SexServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/web/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a3258817-665b-4c06-a98a-7f59c558b3ca/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/TestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/impl/AccountDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c990ebcd-729f-4010-ae2f-bd4ff4d1e3f2/schema/storemvc/table/account">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/ProductController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2024">
-          <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+        <state relative-caret-position="2145">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
