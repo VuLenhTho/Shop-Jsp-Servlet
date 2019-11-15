@@ -32,12 +32,16 @@ public class LoginController extends HttpServlet {
         String message = req.getParameter("message");
         String action = req.getParameter("action");
         if (message != null) {
-            if (message.equals("loginError")) {
-                req.setAttribute("message", "Tài khoản hoặc mật khẩu bị sai");
-            } else if (message.equals("permissionDenied")) {
-                req.setAttribute("message", "Bạn không đủ quyền truy cập vào trang này");
-            } else if (message.equals("dontLogin")) {
-                req.setAttribute("message", "Bạn chưa đăng nhập");
+            switch (message) {
+                case "loginError":
+                    req.setAttribute("message", "Tài khoản hoặc mật khẩu bị sai");
+                    break;
+                case "permissionDenied":
+                    req.setAttribute("message", "Bạn không đủ quyền truy cập vào trang này");
+                    break;
+                case "dontLogin":
+                    req.setAttribute("message", "Bạn chưa đăng nhập");
+                    break;
             }
         }
         if (action != null && action.equals("logout")) {

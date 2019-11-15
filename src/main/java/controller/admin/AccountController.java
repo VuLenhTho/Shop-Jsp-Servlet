@@ -61,8 +61,10 @@ public class AccountController extends HttpServlet {
         }
         PageRequest pageRequest = MapClientToServerUtil.toModel(PageRequest.class,req);
         List<AccountModel> accountModelList = accountService.findAllAccount(pageRequest);
+
         List<RoleModel> roleModelList = roleService.findAllRole();
         req.setAttribute("roleModelList",roleModelList);
+
         long totalItem = accountService.countAllAccount();
         long totalPage = (long) Math.ceil((double) totalItem/pageRequest.getLimit());
         ModelResponse<AccountModel> result = new ModelResponse<>();
